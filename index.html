@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Air University
+  </title>
+   
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link "href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Societial Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACADEMICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">HEALTH CARE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">CAMPUS LIFE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">ADMISSION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner text-center">
+      <h1>Air University<h1>
+    </div>   
+
+  </section>
+
+
+  <section id="societal">
+    <div class="blue-box">
+    <div class="container text-center">
+      <h1>
+        <b>
+          SOCIETAL MISSION
+        </b>
+      </h1>
+    </div>
+  </div>
+      <div class="container text-center">
+   <p></br></br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+      essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+      passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br></br>
+    </p>
+    <button type="button" class="btn btn-primary btn-lg">More About Air University</button>
+     </div>
+
+  </section>
+
+
+<section id="institutes">
+   <div class="container text-center">
+    <h1>
+      <b>
+        AU FACULTIES & INSTITUTES
+      </b>    
+    </h1>
+    <p></br></br></p>
+   </div>
+
+   <div class="container">
+    <div class="row gy-3 my-3">
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FOHS3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Faculty of Health Sciences</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FOE3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Faculty of Engineering</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/Fss3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Faculty of Social Sciences</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FBS3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Basics & Applied Sciences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="container">
+    <div class="row gy-3 my-3">
+       <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/fass3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Aerospace & Strategic Studies</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/IAA3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Institute of Avionics and Aeronautics</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FCAI3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Computing & Artificial Intelligence</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/ausom3.jpg" class="card-img-top" alt="picture">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-primary">Air University School of Management</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ 
+</section>
+
+
+<section id="academics">
+  <div class="container text-center">
+    <h1>
+      <b>
+        AU ACADEMICS
+      </b>
+    </h1>
+    <p></br></br>Preparing students to make meaningful contribution to society as engaged citizens and leaders in a complex world</br></br></p>
+  </div>
+  
+  <div class="container">
+    <div class="row gy-3, my-3">
+      <div class="col md-4">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/8.jpg" class="card-img-top" alt="picture">
+          <div class="card-body">
+            <h3 class="card-title">UNDERGRADUATE PROGRAMMES
+            </h3>
+            <p>
+              Students' professional development and foundation building are both facilitated by their undergraduate education. Our diverse UG programmes turn students into successful people.
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-4">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/9.jpg" class="card-img-top" alt="picture">
+          <div class="card-body">
+            <h3 class="card-title">
+              MASTERS PROGRAMMES
+            </h3>
+            <p>
+              Graduate programmes encourage students to be inquisitive and enhance their knowledge and expertise in specialised sectors. As a result, AU has the most MS-level programmes available.
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col md-4">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/10.jpg" class="card-img-top" alt="picture">
+          <div class="card-body">
+            <h3 class="card-title">
+              PhD PROGRAMMES
+            </h3>
+            <p>
+              Thus, the goal of the PhD programmes at AU is to provide information that fuels economic progress. However, AU sought to produce knowledge for professional development.</br>
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section id="events">
+<div class="container text-center">
+  <h1>
+    <b>
+      AU EVENTS
+    </b>
+  </h1>
+  <p></br></br></p>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.au.edu.pk/AU_New_Assets/images/banner/Turkish_Delegation.jpg" class="d-block w-100" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.au.edu.pk/AU_New_Assets/images/banner/AUTECH_1.jpg" class="d-block w-100" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.au.edu.pk/AU_New_Assets/images/banner/QalbeSaleem11.jpg" class="d-block w-100" alt="image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+
+
+<section id="health">
+  <div class="container text-center">
+    <h1>
+      <b>
+       AU HEALTH CARE
+      </b>
+    </h1>
+    <p></br></br></p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-3 my-3">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://pxl-elginedu.terminalfour.net/filters:format(webp)/prod01/cdn-pxl-elginedu-prod/media/elginedu/academics/departments/emt-paramedic/emergency-medical-technology-paramedic.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Air Children Care</h5>
+            <p class="card-text">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Air Children Care
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://lexipol.brightspotcdn.com/dims4/default/116ca39/2147483647/strip/true/crop/420x236+0+62/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk1-prod-lexipol.s3.us-east-2.amazonaws.com%2Fbrightspot%2Fb6%2F61%2F2bf78b5efaecb08cb1372320f85e%2Femt.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Air Medicine</h5>
+            <p class="card-text">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Air Medicine
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.au.edu.pk/pages/Faculties/Mechatronics_Biomedical_Engineering/Departments/Biomedical/Events/AFVA_1.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Air Health Care</h5>
+            <p class="card-text">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Air Health Care
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <a href="#" class="btn btn-info">More About health Care</a>
+  </div>
+</section>
+
+
+
+<section id="campuses">
+  <div class="container text-center">
+    <h1>
+      <b>
+         AU CAMPUSES
+      </b>
+    </h1>
+    <p></br></br></p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-3 my-3">
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/islamabad.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">ISLAMABAD CAMPUS</h5>
+            <p class="card-text">
+              The campus is located near the Margalla foothills in the south east corner of sector E-9 (PAF Complex) of
+              Islamabad. The University is a degree awarding autonomous institution and its graduates are offered good 
+              placement opportunities in the job market.
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/kamra.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">AEROSPACE & AVIATION CAMPUS KAMRA</h5>
+            <p class="card-text">
+              The campus is established in close vacinity of Pakistan Aeronautical Complex Attock and will have linkeges 
+              with Aviation Research Inovation and Development (AVRID). Aviation Design Institution (AVDI) and National 
+              Aerospace Science and Technology Park (NASTP).
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/multan.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">MULTAN CAMPUS</h5>
+            <p class="card-text">
+              In 2011, Air University established its second campus in Multan, Punjab, Pakistan. It offers undergraduate 
+              and postgraduate degree programs in management sciences, accounting and finance, information technology, 
+              mathematics and computer science.
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/Kharian.png" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">KHARIAN CAMPUS</h5>
+            <p class="card-text">
+              Air University has established its new campus at Kharian which will be fully functional from Spring 2024 
+              Semester. It will initially offer undergraduate programs followed by graduate programs in different disciplines.
+            </p>
+            <a href="#" class="btn btn-secondary">Veiw Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<section id="affiliated">
+  <div class="container text-center">
+    <h1>
+      <b>
+        AFFILIATED INSTITUTES
+      </b>
+    </h1>
+  </div>
+
+  <div class="container">
+    <div class="row gy-3 my-3">
+
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/fbcw.png" class="img-fluid rounded-start" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bilquis College Nur Khan Base, Rawalpindi
+                </h5>
+                <p class="card-text">
+                  The institution has been a focal point for the operations of the Pakistan Air Force Women Association (PAFWA) as well as for the education and training of women since it was founded in 1984.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FCoEP.jpg" class="img-fluid rounded-start" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  College of Education, Peshawar
+                </h5>
+                <p class="card-text">
+                  The Institute is in a unique position to equip teachers for secondary schools as well as Montessori institutes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/Pakistan_Air_Force_Base_Masroor.jpg" class="img-fluid rounded-start" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Aero Medical Institute, PAF Base, Masroor, Karachi
+                </h5>
+                <p class="card-text">
+                  The largest airfield used by the Pakistan Air Force is PAF Base Masroor. The Sindh province's Mauripur 
+                  neighbourhood of Karachi is where it is located.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row gy-3 my-3">
+
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FCEW.jpg" class="img-fluid rounded-start" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">               
+                  Fazaia College of Education for Women, Lahore
+                </h5>
+                <p class="card-text">
+                  FCoE(W), Lahore's rigorous educational and social environment not only produces great academic results, 
+                  but also well-groomed citizens who can adapt to the diversity of the global community..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/favicon.jpg" class="img-fluid rounded-start" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  College of Education for Women, Peshawar
+                </h5>
+                <p class="card-text">
+                  The college has provided public schools and Educational institutions with highly educated, informed, and 
+                  skilled teachers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="footer">
+    <div class="container text-center">
+      <h1><b>CONTACT US</b></h1>
+    </div>
+  
+    <div class="footer">
+      <div class="row text-center">
+  
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h6>
+              <u>Quick Links</u>
+            </h6>
+            <p>Staff Email<br>Student Email<br>Student Services<br>Job Opportunities</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h6>
+              <u>Constituent Units</u>
+            </h6>
+            <p>Fazaia Medical College, Islamabad<br>College of Flying Training, Risalpur<br>
+              College of Aviation Safety Management, Karachi<br></p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h6>
+              <u>Affiliated Institutes</u>
+            </h6>
+            <p>Bilquis College Nur Khan Base, Rawalpindi<br>Fazaia College of Education for Women, Lahore<br>
+              College of Education for Women, Peshawar<br>Aero Medical Institute, PAF Base, Masroor, Karachi<br>
+            </p>
+          </div>
+        </div>
+  
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <p></br></br></br></br></br></br></br></br></br></br></br></br>
+             Air University. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+</body>
+</html>

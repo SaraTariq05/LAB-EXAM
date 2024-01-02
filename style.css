@@ -1,0 +1,244 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{ 
+    font-family: sans-serif;
+}
+
+#nav-bar
+{
+    position: relative;
+    top: 0;
+    z-index: 10; 
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #450896, #3507a0);
+    padding: 0 !important;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px; 
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600; 
+    float: right;
+    text-align: left;
+}
+
+.navbar-toggler
+{
+    outline: none !important;
+}
+.banner
+{
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Air_University_Main_Campus%2C_Islamabad.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    color: black;
+}
+.banner h1
+{
+    padding-top: 170px;
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-weight: 600; 
+    position: relative;
+}
+
+#societal::before 
+{
+    content: '';
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+#societal
+{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.blue-box 
+{
+    background-color: #3043eb; 
+    padding: 20px; 
+    color: #fff;
+    width: auto;
+    height: auto;
+}
+
+
+
+#institutes::before 
+{
+    content: '';
+    height: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+#institutes
+{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: #929cf7;
+}
+
+#academics::before 
+{
+    content: '';
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+#academics
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#events::before 
+{
+    content: '';
+    height: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+  
+#events
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background-color: #a8b0f7;
+    width: 100%;
+    height: 100%;
+}
+
+#health::before 
+{
+    content: '';
+    height: 5px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+  
+#health
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#campuses::before 
+{
+    content: '';
+    height: 5px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+  
+#campuses
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background-color: #b9c0fa;
+}
+
+#affiliated::before 
+{
+    content: '';
+    height: 5px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+  
+#affiliated
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#footer::before 
+{
+    content: '';
+    height: 5px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 15px; 
+}
+#footer
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background-color: #a8b0f7;
+}
+.footer
+{
+    height: 80vh;
+    background-image: url("https://www.studyabroad.pk/Images/newsimages/cpec-career-summit-to-be-held-in-air-university-islamabad.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    color: #fff;
+}
+.footer-widget
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
